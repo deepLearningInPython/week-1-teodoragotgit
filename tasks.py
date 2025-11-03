@@ -29,9 +29,9 @@ def step(x):
 
 # Your code here:
 # -----------------------------------------------
-def ReLu
-
-
+def ReLu(x, cutoff=0):
+    x = np.array(x)  
+    return np.maximum(x, cutoff)
 # -----------------------------------------------
 
 
@@ -44,8 +44,11 @@ def ReLu
 
 # Your code here:
 # -----------------------------------------------
-
-def neural_net_layer
+def neural_net_layer(x, weights):
+    result = x @ weights        
+    activated = ReLu(result)    
+    return activated
+# -----------------------------------------------
 
 
 # ------------------------------------------

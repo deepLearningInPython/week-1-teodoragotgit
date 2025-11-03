@@ -49,6 +49,3 @@ def neural_net_layer(x, weights):
     activated = ReLu(result)    
     return activated
 # -----------------------------------------------
-
-
-# ------------------------------------------
